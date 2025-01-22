@@ -1,0 +1,216 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('cricket back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+
+    
+        height: 100%;
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+    }
+    
+    
+
+
+
+
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #dddddd;
+}
+
+input, button {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input {
+    background: #2a2a2a;
+    color: #f1f1f1;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #00ffcc;
+}
+
+button {
+    background: #00ffcc;
+    color: #121212;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00e6b3;
+}
+
+
+.app-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20% auto;
+    padding: 40px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-buttons button {
+    width: 48%;
+    background: #ff0066;
+    color: white;
+}
+
+.nav-buttons button:hover {
+    background: #e6005c;
+}
+
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+
+
+form {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+#submit-button {
+    background: #007bff;
+    color: white;
+}
+
+#submit-button:hover {
+    background: #0056b3;
+}
+
+
+#match-scheduled-message {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+
+#match-history {
+    list-style: none;
+    padding: 0;
+}
+
+#match-history li {
+    background: #333333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#match-history li button {
+    width: auto;
+    padding: 5px 10px;
+    background: #ff3333;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+#match-history li button:hover {
+    background: #cc0000;
+}
+
+
+#schedule-again {
+    background: #ff6600;
+    margin-right: 10px;
+}
+
+#schedule-again:hover {
+    background: #e65c00;
+}
+
+#print-match, #print-history {
+    background: #4caf50;
+}
+
+#print-match:hover, #print-history:hover {
+    background: #388e3c;
+}
+
+
+#delete-history {
+    background: #d32f2f;
+}
+
+#delete-history:hover {
+    background: #b71c1c;
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-buttons button {
+        width: 100%;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

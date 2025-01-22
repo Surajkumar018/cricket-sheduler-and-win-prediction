@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match Scheduler and Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cricket Match Scheduler and Predictor</h1>
+        <nav>
+            <button id="show-scheduler">Schedule Match</button>
+            <button id="show-history">Match History</button>
+            <button id="show-predictor">Predict Match</button>
+        </nav>
+    </header>
+
+
+    
+
+    <main>
+        <section id="schedule-section" class="active">
+            <h2>Schedule a New Match</h2>
+            <form id="match-form">
+                <label for="team1">Team 1 Name:</label>
+                <input type="text" id="team1" required>
+
+              <label for="captain1">Team 1 Captain:</label>
+                <input type="text" id="captain1" required>
+
+                <label for="team2">Team 2 Name:</label>
+                <input type="text" id="team2" required>
+
+                <label for="captain2">Team 2 Captain:</label>
+              <input type="text" id="captain2" required>
+
+                <label for="match-date">Match Date:</label>
+                <input type="date" id="match-date" required>
+
+                <label for="match-time">Match Time:</label>
+                <input type="time" id="match-time" required>
+
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" required>
+
+                <button type="submit">Schedule Match</button>
+            </form>
+            <div id="match-scheduled-message" class="hidden">
+                <p>Match scheduled successfully!</p>
+                <div id="match-details"></div>
+               
+                <button id="schedule-again">Schedule Another Match</button>
+            </div>
+        </section>
+
+        <section id="history-section" class="hidden">
+            <h2>Match History</h2>
+            <ul id="match-history"></ul>
+          
+        </section>
+
+        <section id="predictor-section" class="hidden">
+            <h2>Predict Match Outcome</h2>
+            <form id="predict-form">
+                <label for="team1-name">Team 1 Name:</label>
+                <input type="text" id="team1-name" required>
+
+                <label for="team2-name">Team 2 Name:</label>
+                <input type="text" id="team2-name" required>
+
+                <label for="target-score">Target Score:</label>
+                <input type="number" id="target-score" required>
+
+                <label for="current-score">Current Score:</label>
+                <input type="number" id="current-score" required>
+
+                <label for="wickets-fallen">Wickets Fallen:</label>
+                <input type="number" id="wickets-fallen" required>
+
+                <label for="remaining-overs">Remaining Overs:</label>
+                <input type="number" id="remaining-overs" required>
+
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" required>
+
+                <button type="submit">Predict Outcome</button>
+            </form>
+            <div id="prediction-result" class="hidden">
+                <div id="prediction-details"></div>
+                <button id="predict-again">Predict Again</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
